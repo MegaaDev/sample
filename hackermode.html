@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="bgBlur hideIt"></div>
+      <div class="pauseMenu hideIt">
+        <div class="pauseMenuContent">
+          <div class="grid-variable-state">
+            <div class="grid-change"><h3>GRID-SIZE</h3></div>
+            <div class="mega">
+              <div class="gird-state grid-state-20"><h3>20x20</h3></div>
+              <div class="gird-state grid-state-30"><h3>30x30</h3></div>
+            </div>
+            <div>
+              <div class="gird-state grid-state-40"><h3>40x40</h3></div>
+              <div class="gird-state grid-state-60"><h3>60x60</h3></div>
+            </div>
+          </div>
+          <div class="pauseAndResume">
+            <div class="restart"><h3>RESTART</h3></div>
+            <div class="resume"><h3>RESUME</h3></div>
+            <div class="main-menu">
+              <a href="index.html"><h3>MAIN MENU</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-with-heart-container">
+        <div class="flex-container">
+          <div class="irotateMobile hiddenit">
+            <!-- <i class="fa-solid fa-rotate-right" style="color: white"></i> -->
+            <i class="fa-solid fa-circle-pause"></i>
+          </div>
+
+          <div class="scoreit">
+            <div>
+              <div class="scores">
+                <h2 class="score">score</h2>
+                <h2 class="HighScore">HighScore</h2>
+              </div>
+            </div>
+            <img class="logoimg" src="./images/logo-01.png" alt="" />
+            <div class="flexit">
+              <div class="irotatePc hidden">
+                <i
+                  class="fa-solid fa-rotate-right shrinkLetter"
+                  style="color: white"
+                ></i>
+              </div>
+              <h1 class="timer">60</h1>
+            </div>
+          </div>
+
+          <div class="heartAndGameBox">
+            <div class="heart">
+              <div class="div1">
+                <!-- <div class="volume-slash">
+                  <i class="fa-solid fa-volume-slash"></i>
+                </div> -->
+                <div class="volume-high">
+                  <i class="fa-sharp fa-solid fa-volume-high emptyList"></i>
+                </div>
+                <div><i class="fa-solid fa-pause"></i></div>
+              </div>
+              <div class="div2">
+                <div>
+                  <img class="heart1" src="./images/heart.png" alt="" />
+                </div>
+                <div>
+                  <img class="heart2" src="./images/heart.png" alt="" />
+                </div>
+                <div>
+                  <img class="heart3" src="./images/heart.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="gameBox">
+              <div class="game-container"></div>
+            </div>
+            <div class="grid-value">
+              <div class="grid-variable-state-menu">
+                <div>
+                  <div class="grid-menu grid-state-menu-20">
+                    <h3>20x20</h3>
+                  </div>
+                  <div class="grid-menu grid-state-menu-30">
+                    <h3>30x30</h3>
+                  </div>
+                </div>
+                <div>
+                  <div class="grid-menu grid-state-menu-40">
+                    <h3>40x40</h3>
+                  </div>
+                  <div class="grid-menu grid-state-menu-60">
+                    <h3>60x60</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sequence"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bottom-grid">
+          <div class="circle"></div>
+          <div class="arrowit up">
+            <img class="clickup" src="./images/arrow.png" alt="" />
+          </div>
+          <div class="arrowit down">
+            <img class="clickdown" src="./images/arrow.png" alt="" />
+          </div>
+          <div class="arrowit right">
+            <img class="clickright" src="./images/arrow.png" alt="" />
+          </div>
+          <div class="arrowit left">
+            <img class="clickleft" src="./images/arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="Controls"></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/929af33233.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

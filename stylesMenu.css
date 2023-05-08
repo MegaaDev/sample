@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.background-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url("./images/bgmain-02-02.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  perspective: 1500px;
+  cursor: pointer;
+  margin-top: 200px;
+}
+
+.front1 {
+  position: absolute;
+  background-color: rgb(1, 0, 5);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.8s;
+  z-index: 1;
+  font-family: "Bruno Ace SC", cursive;
+}
+.back1 {
+  position: absolute;
+  background-color: rgb(1, 0, 5);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.8s;
+  transform: rotateY(-180deg);
+  z-index: 0;
+  font-family: "Bruno Ace SC", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container:hover > .front1 {
+  transform: rotateY(180deg);
+}
+
+.container:hover > .back1 {
+  transform: rotateY(0deg);
+}
+
+.front2 {
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.8s;
+  z-index: 1;
+  font-family: "Bruno Ace SC", cursive;
+}
+.back2 {
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 0.8s;
+  transform: rotateY(-180deg);
+  z-index: 0;
+  font-family: "Bruno Ace SC", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container:hover > .front2 {
+  transform: rotateY(180deg);
+}
+
+.container:hover > .back2 {
+  transform: rotateY(0deg);
+}
+
+.image-container1 {
+  height: 65%;
+  width: 100%;
+  background-image: url("/images/bg-hm-retro.png");
+  background-position: center;
+  background-size: cover;
+}
+.content-hacker-mode {
+  height: 35%;
+  width: 100%;
+  font-family: "Bruno Ace SC", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 30px;
+  color: white;
+}
+
+.image-container2 {
+  height: 70%;
+  width: 100%;
+  background-image: url("/images/bg-nm.png");
+  background-position: initial;
+  background-size: cover;
+}
+.content-normal-mode {
+  height: 30%;
+  width: 100%;
+  font-family: "Bruno Ace SC", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 6px;
+  color: white;
+}
+
+h2 {
+  margin-top: 18px;
+}
+
+.click {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(54, 236, 66);
+  height: 20%;
+  width: 85%;
+  margin-top: 30px;
+  border: 2px solid rgb(54, 236, 66);
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 0 28px -4px rgb(54, 236, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.click:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  background-color: rgb(54, 236, 66);
+  border: 0;
+  color: rgb(39, 39, 39);
+  box-shadow: 0 20px 28px -10px rgb(54, 236, 66);
+}
+.click:hover > a {
+  color: rgb(39, 39, 39);
+}
+
+.mode-content {
+  width: 80%;
+  height: 50%;
+}
+
+ul {
+  margin-top: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+h3 {
+  text-align: center;
+
+  text-decoration: underline;
+  color: rgb(54, 236, 66);
+}
+
+.logo {
+  position: absolute;
+  top: 0%;
+}
+
+img {
+  height: 240px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 860px) {
+  .container {
+    height: 400px;
+    width: 300px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .image-container2 {
+    background-position: center;
+  }
+  .content-hacker-mode {
+    margin-top: 22px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .container {
+    height: 300px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .background-container {
+    gap: 5px;
+  }
+  .container {
+    height: 300px;
+    width: 200px;
+  }
+  img {
+    height: 200px;
+  }
+  img {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .background-container {
+    gap: 5px;
+  }
+  .container {
+    height: 250px;
+    width: 150px;
+  }
+  .background-container {
+    gap: 15px;
+  }
+}
