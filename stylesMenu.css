@@ -209,13 +209,22 @@ img {
     background-position: center;
   }
   .content-hacker-mode {
-    margin-top: 22px;
+    margin-top: 17px;
   }
 }
 @media only screen and (max-width: 655px) {
   .container {
     height: 300px;
     width: 200px;
+  }
+  .click a {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 0.4rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 565px) {
