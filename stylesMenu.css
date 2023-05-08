@@ -100,7 +100,7 @@
 .image-container1 {
   height: 65%;
   width: 100%;
-  background-image: url("/images/bg-hm-retro.png");
+  background-image: url("./images/bg-hm-retro.png");
   background-position: center;
   background-size: cover;
 }
@@ -118,7 +118,7 @@
 .image-container2 {
   height: 70%;
   width: 100%;
-  background-image: url("/images/bg-nm.png");
+  background-image: url("./images/bg-nm.png");
   background-position: initial;
   background-size: cover;
 }
