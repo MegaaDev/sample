@@ -298,13 +298,13 @@ a {
 .resume {
   width: 80%;
   height: 14%;
-  border: 2px solid rgb(118, 54, 236);
+  border: 2px solid rgb(33, 128, 179);
 
   border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(118, 54, 236);
+  color: rgb(33, 128, 179);
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -346,7 +346,7 @@ a {
   width: 80%;
   height: 14%;
 
-  background-color: rgb(118, 54, 236);
+  background-color: rgb(33, 128, 179);
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -425,21 +425,21 @@ a {
   color: white;
 }
 .grid-state-20 {
-  background-color: rgb(118, 54, 236);
+  background-color: rgb(33, 128, 179);
 }
 .grid-state-30 {
-  background-color: rgb(118, 54, 236);
+  background-color: rgb(33, 128, 179);
 }
 .grid-state-40 {
-  background-color: rgb(118, 54, 236);
+  background-color: rgb(33, 128, 179);
 }
 .grid-state-60 {
-  background-color: rgb(118, 54, 236);
+  background-color: rgb(33, 128, 179);
 }
 .gird-state:hover {
   background-color: rgb(48, 48, 48, 0.3);
-  border: 1px solid rgb(118, 54, 236);
-  color: rgb(118, 54, 236);
+  border: 1px solid rgb(33, 128, 179);
+  color: rgb(33, 128, 179);
 
   transition: all 0.3s ease 0s;
 }
@@ -485,7 +485,7 @@ a {
 .grid-change {
   position: absolute;
   top: 6%;
-  color: rgb(118, 54, 236);
+  color: rgb(33, 128, 179);
   text-decoration: underline;
 }
 
@@ -501,16 +501,16 @@ a {
 
 .restart:hover {
   background-color: rgb(48, 48, 48, 0.3);
-  border: 1px solid rgb(118, 54, 236);
-  color: rgb(118, 54, 236);
+  border: 1px solid rgb(33, 128, 179);
+  color: rgb(33, 128, 179);
   width: 90%;
   height: 20%;
 }
 
 .resume:hover {
   background-color: rgb(48, 48, 48, 0.3);
-  border: 1px solid rgb(118, 54, 236);
-  color: rgb(118, 54, 236);
+  border: 1px solid rgb(33, 128, 179);
+  color: rgb(33, 128, 179);
   width: 90%;
   height: 20%;
 }
